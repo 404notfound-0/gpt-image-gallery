@@ -762,7 +762,7 @@
       <section class="gallery">
         <article class="card case-1">
           <div class="image has-real-image">
-            <img src="assets/concept-poster-positive.png" alt="执着于纯理想，粹于当下积极概念海报" />
+            <img src="assets/optimized/concept-poster-positive-thumb.webp" data-full="assets/optimized/concept-poster-positive-large.webp" width="941" height="1672" loading="lazy" decoding="async" alt="执着于纯理想，粹于当下积极概念海报" />
             <span class="image-label">SEMANTIC CONCEPT POSTER</span>
           </div>
           <div class="card-body">
@@ -774,7 +774,7 @@
 
         <article class="card case-2">
           <div class="image has-real-image is-wide">
-            <img src="assets/gallery-main-02.png" alt="马王堆一号汉墓 T 形帛画知识海报" />
+            <img src="assets/optimized/gallery-main-02-thumb.webp" data-full="assets/optimized/gallery-main-02-large.webp" width="1774" height="887" loading="lazy" decoding="async" alt="马王堆一号汉墓 T 形帛画知识海报" />
             <span class="image-label">MUSEUM KNOWLEDGE POSTER</span>
           </div>
           <div class="card-body">
@@ -786,7 +786,7 @@
 
         <article class="card case-3">
           <div class="image has-real-image">
-            <img src="assets/gallery-extra-01.png" alt="gpt-image-2 生成图片样例 01" />
+            <img src="assets/optimized/gallery-extra-01-thumb.webp" data-full="assets/optimized/gallery-extra-01-large.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="gpt-image-2 生成图片样例 01" />
             <span class="image-label">GENERATED IMAGE</span>
           </div>
           <div class="card-body">
@@ -798,7 +798,7 @@
 
         <article class="card case-4">
           <div class="image has-real-image">
-            <img src="assets/gallery-extra-02.png" alt="gpt-image-2 生成图片样例 02" />
+            <img src="assets/optimized/gallery-extra-02-thumb.webp" data-full="assets/optimized/gallery-extra-02-large.webp" width="941" height="1672" loading="lazy" decoding="async" alt="gpt-image-2 生成图片样例 02" />
             <span class="image-label">GENERATED IMAGE</span>
           </div>
           <div class="card-body">
@@ -810,7 +810,7 @@
 
         <article class="card case-5">
           <div class="image has-real-image">
-            <img src="assets/gallery-extra-03.png" alt="gpt-image-2 生成图片样例 03" />
+            <img src="assets/optimized/gallery-extra-03-thumb.webp" data-full="assets/optimized/gallery-extra-03-large.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="gpt-image-2 生成图片样例 03" />
             <span class="image-label">GENERATED IMAGE</span>
           </div>
           <div class="card-body">
@@ -822,7 +822,7 @@
 
         <article class="card case-6">
           <div class="image has-real-image">
-            <img src="assets/gallery-extra-04-baofu.png" alt="暴富概念海报" />
+            <img src="assets/optimized/gallery-extra-04-baofu-thumb.webp" data-full="assets/optimized/gallery-extra-04-baofu-large.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="暴富概念海报" />
             <span class="image-label">SEMANTIC CONCEPT POSTER</span>
           </div>
           <div class="card-body">
@@ -1218,7 +1218,7 @@
       }
 
       function openImageCover(image) {
-        imageCoverImg.src = image.currentSrc || image.src;
+        imageCoverImg.src = image.dataset.full || image.currentSrc || image.src;
         imageCoverImg.alt = image.alt;
         imageCoverCaption.textContent = image.alt;
         imageCover.classList.add("is-open");
