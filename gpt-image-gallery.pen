@@ -1,0 +1,982 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "GIG00",
+      "x": 0,
+      "y": 0,
+      "name": "GPT Image 2.0 Gallery Prototype",
+      "clip": true,
+      "width": 1440,
+      "height": 1580,
+      "fill": "#05070D",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BG001",
+          "x": 0,
+          "y": 0,
+          "name": "Deep Space Background",
+          "width": 1440,
+          "height": 1580,
+          "fill": "#05070D"
+        },
+        {
+          "type": "frame",
+          "id": "GLOW1",
+          "x": 74,
+          "y": 58,
+          "name": "Cyan Glow Block",
+          "width": 420,
+          "height": 120,
+          "fill": "#0E3140",
+          "opacity": 0.42
+        },
+        {
+          "type": "frame",
+          "id": "GLOW2",
+          "x": 902,
+          "y": 96,
+          "name": "Blue Glow Block",
+          "width": 372,
+          "height": 96,
+          "fill": "#13274F",
+          "opacity": 0.5
+        },
+        {
+          "type": "frame",
+          "id": "NAV01",
+          "x": 72,
+          "y": 42,
+          "name": "Top Bar",
+          "width": 1296,
+          "height": 58,
+          "fill": "#07101A",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#1B3446"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "NAVTX",
+              "x": 24,
+              "y": 18,
+              "name": "Brand",
+              "fill": "#EAF6FF",
+              "content": "GPT IMAGE 2.0 / CAPABILITY GALLERY",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "NAVST",
+              "x": 1098,
+              "y": 18,
+              "name": "Status",
+              "fill": "#57F0C6",
+              "content": "STATIC PROTOTYPE",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "HERO1",
+          "x": 72,
+          "y": 156,
+          "name": "Hero Eyebrow",
+          "fill": "#57F0C6",
+          "content": "IMAGE GENERATION SHOWCASE",
+          "fontFamily": "JetBrains Mono",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "letterSpacing": 1
+        },
+        {
+          "type": "text",
+          "id": "HERO2",
+          "x": 72,
+          "y": 190,
+          "name": "Hero Title",
+          "fill": "#F4FAFF",
+          "content": "GPT image2.0 生图能力展示",
+          "fontFamily": "Inter",
+          "fontSize": 52,
+          "fontWeight": "800"
+        },
+        {
+          "type": "text",
+          "id": "HERO3",
+          "x": 74,
+          "y": 270,
+          "name": "Hero Copy",
+          "fill": "#9CB3C9",
+          "content": "用画廊形式展示不同提示词下的图像生成能力。提示词默认收起，点击后展示完整创作指令。",
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "STAT1",
+          "x": 960,
+          "y": 162,
+          "name": "Hero Metric 1",
+          "width": 188,
+          "height": 106,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#244B5F"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "ST1A",
+              "x": 20,
+              "y": 18,
+              "name": "Metric Label",
+              "fill": "#8CA3B8",
+              "content": "CASES",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "ST1B",
+              "x": 20,
+              "y": 46,
+              "name": "Metric Value",
+              "fill": "#FFFFFF",
+              "content": "06",
+              "fontFamily": "Inter",
+              "fontSize": 38,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "STAT2",
+          "x": 1178,
+          "y": 162,
+          "name": "Hero Metric 2",
+          "width": 190,
+          "height": 106,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#244B5F"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "ST2A",
+              "x": 20,
+              "y": 18,
+              "name": "Metric Label",
+              "fill": "#8CA3B8",
+              "content": "PROMPT MODE",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "ST2B",
+              "x": 20,
+              "y": 54,
+              "name": "Metric Value",
+              "fill": "#57F0C6",
+              "content": "折叠展示",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TAGS0",
+          "x": 72,
+          "y": 354,
+          "name": "Capability Tags",
+          "width": 1296,
+          "height": 72,
+          "fill": "#07101A",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#193344"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "TAG01",
+              "x": 24,
+              "y": 26,
+              "name": "Tag Photoreal",
+              "fill": "#DDF6FF",
+              "content": "写实摄影",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAG02",
+              "x": 144,
+              "y": 26,
+              "name": "Tag Product",
+              "fill": "#DDF6FF",
+              "content": "产品海报",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAG03",
+              "x": 264,
+              "y": 26,
+              "name": "Tag Character",
+              "fill": "#DDF6FF",
+              "content": "角色设定",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAG04",
+              "x": 384,
+              "y": 26,
+              "name": "Tag Poster",
+              "fill": "#DDF6FF",
+              "content": "中文排版",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAG05",
+              "x": 504,
+              "y": 26,
+              "name": "Tag Storyboard",
+              "fill": "#DDF6FF",
+              "content": "分镜构图",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAG06",
+              "x": 624,
+              "y": 26,
+              "name": "Tag Consistency",
+              "fill": "#DDF6FF",
+              "content": "风格一致性",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD1",
+          "x": 72,
+          "y": 486,
+          "name": "Case Card 01",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG01",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 01",
+              "width": 372,
+              "height": 238,
+              "fill": "#173E4F"
+            },
+            {
+              "type": "frame",
+              "id": "IMG01A",
+              "x": 42,
+              "y": 42,
+              "name": "Image Light Shape",
+              "width": 122,
+              "height": 122,
+              "fill": "#57F0C6",
+              "opacity": 0.42
+            },
+            {
+              "type": "frame",
+              "id": "IMG01B",
+              "x": 224,
+              "y": 86,
+              "name": "Image Dark Shape",
+              "width": 104,
+              "height": 132,
+              "fill": "#091D2B",
+              "opacity": 0.74
+            },
+            {
+              "type": "text",
+              "id": "C1TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "未来耳机产品海报",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C1TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "产品摄影 / 材质细节 / 海报光效",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C1SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C1EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C1TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：黑色陶瓷耳机，冷光边缘，高级科技广告摄影。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD2",
+          "x": 516,
+          "y": 486,
+          "name": "Case Card 02",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG02",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 02",
+              "width": 372,
+              "height": 238,
+              "fill": "#1F305F"
+            },
+            {
+              "type": "frame",
+              "id": "IMG02A",
+              "x": 58,
+              "y": 56,
+              "name": "Image Light Shape",
+              "width": 250,
+              "height": 32,
+              "fill": "#A7C7FF",
+              "opacity": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "IMG02B",
+              "x": 116,
+              "y": 120,
+              "name": "Image Dark Shape",
+              "width": 170,
+              "height": 92,
+              "fill": "#071322",
+              "opacity": 0.72
+            },
+            {
+              "type": "text",
+              "id": "C2TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "赛博城市夜景",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C2TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "环境概念 / 电影感 / 高动态光照",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C2SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C2EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C2TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：雨夜霓虹街区，远景高楼，电影镜头与湿地反光。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD3",
+          "x": 960,
+          "y": 486,
+          "name": "Case Card 03",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG03",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 03",
+              "width": 372,
+              "height": 238,
+              "fill": "#27445A"
+            },
+            {
+              "type": "frame",
+              "id": "IMG03A",
+              "x": 68,
+              "y": 50,
+              "name": "Image Light Shape",
+              "width": 112,
+              "height": 146,
+              "fill": "#F6E6B9",
+              "opacity": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "IMG03B",
+              "x": 212,
+              "y": 42,
+              "name": "Image Dark Shape",
+              "width": 110,
+              "height": 166,
+              "fill": "#0B1720",
+              "opacity": 0.78
+            },
+            {
+              "type": "text",
+              "id": "C3TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "人物角色设定",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C3TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "角色一致性 / 服装设计 / 情绪表达",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C3SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C3EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C3TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：未来探险家，统一服装语言，半身肖像与设定图质感。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD4",
+          "x": 72,
+          "y": 986,
+          "name": "Case Card 04",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG04",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 04",
+              "width": 372,
+              "height": 238,
+              "fill": "#103B33"
+            },
+            {
+              "type": "frame",
+              "id": "IMG04A",
+              "x": 36,
+              "y": 42,
+              "name": "Image Light Shape",
+              "width": 300,
+              "height": 52,
+              "fill": "#57F0C6",
+              "opacity": 0.38
+            },
+            {
+              "type": "frame",
+              "id": "IMG04B",
+              "x": 84,
+              "y": 122,
+              "name": "Image Dark Shape",
+              "width": 208,
+              "height": 72,
+              "fill": "#081B20",
+              "opacity": 0.75
+            },
+            {
+              "type": "text",
+              "id": "C4TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "中文活动主视觉",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C4TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "中文标题 / 版式秩序 / 海报主视觉",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C4SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C4EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C4TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：中文标题清晰可读，科技会议海报，大面积留白。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD5",
+          "x": 516,
+          "y": 986,
+          "name": "Case Card 05",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG05",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 05",
+              "width": 372,
+              "height": 238,
+              "fill": "#332A58"
+            },
+            {
+              "type": "frame",
+              "id": "IMG05A",
+              "x": 46,
+              "y": 48,
+              "name": "Image Light Shape",
+              "width": 82,
+              "height": 132,
+              "fill": "#D8C7FF",
+              "opacity": 0.48
+            },
+            {
+              "type": "frame",
+              "id": "IMG05B",
+              "x": 160,
+              "y": 70,
+              "name": "Image Dark Shape",
+              "width": 166,
+              "height": 122,
+              "fill": "#101423",
+              "opacity": 0.72
+            },
+            {
+              "type": "text",
+              "id": "C5TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "故事分镜场景",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C5TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "分镜 / 叙事空间 / 镜头语言",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C5SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C5EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C5TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：单人穿过实验室走廊，宽银幕比例，连续叙事感。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CARD6",
+          "x": 960,
+          "y": 986,
+          "name": "Case Card 06",
+          "width": 408,
+          "height": 450,
+          "fill": "#08131D",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2E6377"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "IMG06",
+              "x": 18,
+              "y": 18,
+              "name": "Generated Image Placeholder 06",
+              "width": 372,
+              "height": 238,
+              "fill": "#4A2635"
+            },
+            {
+              "type": "frame",
+              "id": "IMG06A",
+              "x": 42,
+              "y": 48,
+              "name": "Image Light Shape",
+              "width": 292,
+              "height": 142,
+              "fill": "#F2A7BD",
+              "opacity": 0.36
+            },
+            {
+              "type": "frame",
+              "id": "IMG06B",
+              "x": 112,
+              "y": 82,
+              "name": "Image Dark Shape",
+              "width": 152,
+              "height": 94,
+              "fill": "#170E18",
+              "opacity": 0.74
+            },
+            {
+              "type": "text",
+              "id": "C6TIT",
+              "x": 18,
+              "y": 278,
+              "name": "Case Title",
+              "fill": "#F4FAFF",
+              "content": "艺术风格迁移",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "C6TAG",
+              "x": 18,
+              "y": 314,
+              "name": "Case Tag",
+              "fill": "#57F0C6",
+              "content": "风格化 / 色彩控制 / 纹理表现",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C6SUM",
+              "x": 18,
+              "y": 350,
+              "name": "Collapsed Prompt",
+              "fill": "#A9BDD0",
+              "content": "提示词：略  展开 +",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C6EXP",
+              "x": 18,
+              "y": 382,
+              "name": "Expanded Prompt Preview",
+              "width": 372,
+              "height": 48,
+              "fill": "#0D1A27",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1D4052"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C6TXT",
+                  "x": 14,
+                  "y": 12,
+                  "name": "Prompt Text",
+                  "fill": "#DDEAF4",
+                  "content": "展开态示意：同一主体转化为未来主义插画，保留轮廓与色彩锚点。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "FOOT1",
+          "x": 72,
+          "y": 1494,
+          "name": "Footer Note",
+          "fill": "#6F8799",
+          "content": "Prototype note: 图片区域为占位视觉；真实 GPT image2.0 输出图与完整提示词可在下一版替换。",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "500"
+        }
+      ]
+    }
+  ]
+}
