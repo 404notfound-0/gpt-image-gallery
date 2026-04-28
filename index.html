@@ -491,6 +491,8 @@
         font-weight: 760;
         text-align: left;
         outline: none;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
       }
 
       .prompt-trigger .prompt-preview {
@@ -502,6 +504,11 @@
 
       .prompt-trigger:hover,
       .prompt-trigger[aria-expanded="true"] {
+        color: #eef7ff;
+      }
+
+      .prompt-trigger:active {
+        background: transparent;
         color: #eef7ff;
       }
 
@@ -568,6 +575,8 @@
         cursor: pointer;
         font-size: 18px;
         font-weight: 700;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
       }
 
       .image-cover {
@@ -1250,6 +1259,7 @@
 
       triggers.forEach((button) => {
         button.addEventListener("click", () => {
+          button.blur();
           const isCurrentOpen = button.getAttribute("aria-expanded") === "true";
           if (isCurrentOpen) {
             closePrompt();
